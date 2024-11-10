@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Moje Pliki</title>
+</head>
+<body>
+    <h1>Moje Pliki</h1>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <label for="file">Wybierz plik do przesłania:</label>
+        <input type="file" name="file" id="file">
+        <input type="submit" value="Dodaj plik">
+    </form>
+    <h2>Pobierz plik</h2>
+    <form action="download.php" method="post">
+        <label for="filename">Nazwa pliku:</label>
+        <input type="text" name="filename" id="filename">
+        <input type="submit" value="Pobierz">
+    </form>
+</body>
+</html>
